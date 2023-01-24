@@ -23,7 +23,7 @@ class _splashState extends State<splash> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.cyanAccent,
+        color: Colors.cyan,
         child: Center(
             child: Text(
           'Think of an event \n We make it happen',
