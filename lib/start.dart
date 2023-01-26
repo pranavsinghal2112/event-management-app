@@ -17,7 +17,7 @@ class start extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          ElevatedButton(onPressed: (){}, child: Text('you want to organise')),
+          ElevatedButton(onPressed: () {}, child: Text('you want to organise')),
           SizedBox(
             height: 40,
           ),
@@ -28,19 +28,17 @@ class start extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          ElevatedButton(onPressed: (){}, child: Text('you want to be contractor')),
-
+          ElevatedButton(
+              onPressed: () {}, child: Text('you want to be contractor')),
         ],
       ),
       appBar: AppBar(
           title: Center(
-            child: Text(
-        'EvesAndGo',
-        style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-      ),
-          )
-      ),
+        child: Text(
+          'EvesAndGo',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+        ),
+      )),
     );
-    
   }
 }

@@ -25,7 +25,7 @@ class DashBoardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,gi
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
@@ -33,21 +33,36 @@ class DashBoardScreen extends StatelessWidget {
               child: SvgPicture.asset(
                 "assets/intro 1.svg",
               )),
+          SizedBox(
+            height: 10,
+          ),
           Text(
             "SCHEDULE",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+          ),
+          SizedBox(
+            height: 10,
           ),
           Container(
             height: 150,
             child: SvgPicture.asset('assets/intro 2.svg'),
           ),
+          SizedBox(
+            height: 10,
+          ),
           Text(
             'PREPARE',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
           ),
+          SizedBox(
+            height: 10,
+          ),
           Container(
             height: 150,
             child: SvgPicture.asset('assets/intro 3.svg'),
+          ),
+          SizedBox(
+            height: 10,
           ),
           Text(
             "EXECUTE",

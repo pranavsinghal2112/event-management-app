@@ -30,7 +30,19 @@ class register extends StatelessWidget {
             child: Column(
               children: [
                 TextField(
+                  keyboardType: TextInputType.name,
                   decoration: InputDecoration(
+                    hintText: 'Enter Your Name here',
+                    border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30))),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                      hintText: 'Enter Your Email',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30))),
                 ),
@@ -38,7 +50,10 @@ class register extends StatelessWidget {
                   height: 20,
                 ),
                 TextField(
+                  keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
+                      hintText: 'Enter Your Mobile Number',
+
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30))),
                 ),
@@ -46,7 +61,10 @@ class register extends StatelessWidget {
                   height: 20,
                 ),
                 TextField(
+                  obscureText: true,
+                  obscuringCharacter: '*',
                   decoration: InputDecoration(
+                      hintText: 'Enter Password',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30))),
                 ),
@@ -54,15 +72,10 @@ class register extends StatelessWidget {
                   height: 20,
                 ),
                 TextField(
+                  obscureText: true,
+                  obscuringCharacter: '*',
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30))),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                TextField(
-                  decoration: InputDecoration(
+                      hintText: 'Confirm Password',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30))),
                 ),

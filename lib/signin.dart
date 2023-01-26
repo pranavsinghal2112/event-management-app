@@ -22,47 +22,60 @@ class signin extends StatelessWidget {
                 height: 40,
               ),
             ),
-            TextField(
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(30))),
-            ),
-            SizedBox(
-              height: 40,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(30))),
-            ),
-            SizedBox(
-              height: 40,
-            ),
             Container(
-              child: Text(
-                "forget Password ?",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-              ),
-            ),
-            SizedBox(
-              height: 40,
-            ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => start()));
-                },
-                child: Text(
-                  "Login",
+              width: 300,
+              child: Column(
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Enter your Email/Mob No.',
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30))),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                TextField(
+                  obscureText: true,
+                  obscuringCharacter: '*',
+                  decoration: InputDecoration(
+                    hintText: 'Enter Password',
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30))),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  child: InkWell(
+                    child: Text(
+                      "forget Password ?",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => start()));
+                    },
+                    child: Text(
+                      "Login",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                    )),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Don't have an account? Sign up ",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-                )),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              "Don't have an account?  ",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                ),
+              ],
             )
+            ),
           ],
         ),
       ),
