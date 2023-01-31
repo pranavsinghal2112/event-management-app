@@ -3,7 +3,9 @@ import 'package:first/splash.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+/*the app will contain an ai model which will sort and filter out the choic for the customer to choose the best event manager for them for their use
+* and this model will be compromise of 4 ai model out of the best result will be shown to the user these 4 models will be on deep learning, cnn, rnn, etc
+* the final output with choices will be given out as the resukt to its user*/
 void main() {
   runApp(flutterapp());
 }
@@ -24,8 +26,9 @@ class DashBoardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFFFFCED),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,gi
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
@@ -80,7 +83,7 @@ class DashBoardScreen extends StatelessWidget {
         ],
       ),
       appBar: AppBar(
-        title: Center(child: Text("EvesAndGo")),
+        title: Center(child: Text("EventGo")),
       ),
     );
   }
